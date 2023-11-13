@@ -1,0 +1,17 @@
+/*o usuário digita um numero e o código verifica se ele é par ou impar*/
+
+#include <stdio.h>
+int main()
+{
+    int n, divisao;
+    printf("Escreva um numero: ");
+    scanf("%d",&n);
+    //divisao= n/2;
+    if(n % 2==0){ // operador % retorna o resto
+        printf("par"); 
+    }else{
+        printf("impar");
+    }
+
+    return 0;
+}
