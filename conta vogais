@@ -1,0 +1,38 @@
+/*retorna quantas vogais tem em uma palavra digitada pelo usuário*/
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char palavra[100];
+    int x, tam, vogais=0;
+    printf("Digite uma palavra: "); 
+    gets(palavra);
+    tam=strlen(palavra);
+    for(x=0; x<tam; x++){
+        if(palavra[x]=='a'){
+            vogais=vogais+1;
+    	}else if(palavra[x]=='e'){
+    		vogais=vogais+1;
+    	}else if(palavra[x]=='i'){
+    		vogais=vogais+1;
+    	}else if(palavra[x]=='o'){
+    		vogais=vogais+1;
+    	}else if(palavra[x]=='u'){
+    		vogais=vogais+1;
+    	}else if(palavra[x]=='A'){
+    		vogais=vogais+1;
+    	}else if(palavra[x]=='E'){
+    		vogais=vogais+1;
+    	}else if(palavra[x]=='I'){
+    		vogais=vogais+1;
+    	}else if(palavra[x]=='O'){
+    		vogais=vogais+1;
+    	}else if(palavra[x]=='U'){
+    		vogais=vogais+1;
+    	}
+
+    }
+    printf("%d",vogais);
+    return 0;
+}
