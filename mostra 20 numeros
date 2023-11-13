@@ -1,0 +1,24 @@
+/*mostra 20 numeros digitados pelo usuario usando array*/
+
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int y,x,vetor[20];
+    for(y=0;y<20;y++){
+        printf("Digite 20 numeros: "); 
+        scanf("%d",&vetor[y]);
+    }
+    for(x=0;x<20;x++){
+        //printf("%d",vetor[x]);
+        if(vetor[x]<0){
+            vetor[x]=vetor[x]*(-1);
+            printf("%d",vetor[x]);
+        }else if(vetor[x]>0){
+            vetor[x]=vetor[x]*(-1);
+            printf("%d",vetor[x]);
+        }
+    }
+   
+    return 0;
+}
